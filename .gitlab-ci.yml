@@ -6,8 +6,8 @@ before_script:
 pages:
   only:
     - main
-  script:
-    - npm run build
   artifacts:
     paths:
       - public
+  script:
+    - npm run build
