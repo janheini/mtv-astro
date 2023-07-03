@@ -1,3 +1,3 @@
 # astro-mtv
 
-https://gitlab.uni-hannover.de/j.heinemeyer/mtv-astro
+https://j.heinemeyer.idmpages.uni-h.de/mtv-astro/
