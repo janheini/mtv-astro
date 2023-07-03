@@ -1,0 +1,13 @@
+image: node:lts
+
+before_script:
+  - npm install
+
+pages:
+  only:
+    - main
+  script:
+    - npm run build
+  artifacts:
+    paths:
+      - public
