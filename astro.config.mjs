@@ -18,6 +18,10 @@ export default defineConfig({
     site: SITE,
     base: BASE,
 
+    build: {
+        assets: '_assets'
+    },
+
     experimental: {
         assets: true
     }
