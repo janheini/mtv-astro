@@ -13,9 +13,9 @@ pages:
     SITE: $CI_PAGES_URL
     BASE: $CI_PROJECT_NAME
   cache:
-    key: one-key-to-rule-them-all
-    files:
-      - package-lock.json
+    key:
+      files:
+        - package-lock.json
     paths:
       - public/
       - .npm/
