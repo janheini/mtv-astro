@@ -13,6 +13,8 @@ export default defineConfig({
     // using a folder called `static` instead.
     publicDir: 'static',
 
+    site: 'https://j.heinemeyer.idmpages.uni-h.de/mtv-astro',
+
     experimental: {
         assets: true
     }
