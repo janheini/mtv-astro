@@ -1,6 +1,11 @@
 ---
-const res = await fetch("https://mtvbarfelde.de/wp-json/wp/v2/posts")
-const posts = await res.json()
+import { getCollection } from 'astro:content';
+// Get all entries from a collection.
+// Requires the name of the collection as an argument.
+// Example: retrieve `src/content/blog/**`
+const allBlogPosts = await getCollection('posts');
+const entry = allBlogPosts[0]
+const { Content } = await entry.render();
 ---
 <!DOCTYPE html>
 <html lang="de">
@@ -9,15 +14,18 @@ const posts = await res.json()
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <meta name="viewport" content="width=device-width" />
         <meta name="generator" content={Astro.generator} />
-        <title>mtvbarfelde</title>
+        <title>MTV Barfelde</title>
     </head>
     <body>
-        <h1>mtvbarfelde</h1>
-        {
-          posts.map((post) => (
-              <h2 set:html={post.title.rendered} />
-              <p set:html={post.content.rendered} />
-          ))
-        }
+        <h1>{ entry.data.title }</h1>
+        <Content />
+
+        Now a list of all posts:
+        <ul>
+        {allBlogPosts.map((post) => (
+            <li><a href={"posts/" + post.slug}>{post.data.title}</a></li>
+        ))}
+        </ul>
     </body>
 </html>
+

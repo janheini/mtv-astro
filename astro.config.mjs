@@ -13,4 +13,8 @@ export default defineConfig({
     // using a folder called `static` instead.
     publicDir: 'static',
 
+    experimental: {
+        assets: true
+    }
+
 });
