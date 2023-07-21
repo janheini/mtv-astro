@@ -1,7 +1,7 @@
 image: node:lts
 
 before_script:
-  - npm install
+  - npm install --cache .npm --prefer-offline
 
 pages:
   only:
@@ -12,5 +12,13 @@ pages:
   variables:
     SITE: $CI_PAGES_URL
     BASE: $CI_PROJECT_NAME
+  cache:
+    key: one-key-to-rule-them-all
+    files:
+      - package-lock.json
+    paths:
+      - public/
+      - .npm/
+      - node_modules/
   script:
     - npm run build
