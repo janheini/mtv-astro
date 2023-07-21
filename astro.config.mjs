@@ -1,4 +1,6 @@
 import { defineConfig } from 'astro/config';
+import { loadEnv } from "vite";
+const { SITE, BASE } = loadEnv(import.meta.env.MODE, process.cwd(), "");
 
 // https://astro.build/config
 export default defineConfig({
@@ -13,7 +15,8 @@ export default defineConfig({
     // using a folder called `static` instead.
     publicDir: 'static',
 
-    site: 'https://j.heinemeyer.idmpages.uni-h.de/mtv-astro',
+    site: SITE,
+    base: BASE,
 
     experimental: {
         assets: true
