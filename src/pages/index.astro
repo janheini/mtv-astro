@@ -1,33 +1,6 @@
 ---
-import Header from '../components/header.astro';
-import { getCollection } from 'astro:content';
-// Get all entries from a collection.
-// Requires the name of the collection as an argument.
-// Example: retrieve `src/content/blog/**`
-const allBlogPosts = await getCollection('posts');
-const entry = allBlogPosts[0]
-const { Content } = await entry.render();
+import BaseLayout from '../layouts/BaseLayout.astro';
 ---
-<!DOCTYPE html>
-<html lang="de">
-    <head>
-        <meta charset="utf-8" />
-        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-        <meta name="viewport" content="width=device-width" />
-        <meta name="generator" content={Astro.generator} />
-        <title>MTV Barfelde</title>
-    </head>
-    <body>
-        <Header />
-        <h1>{ entry.data.title }</h1>
-        <Content />
-
-        Now a list of all posts:
-        <ul>
-        {allBlogPosts.map((post) => (
-            <li><a href={"posts/" + post.slug}>{post.data.title}</a></li>
-        ))}
-        </ul>
-    </body>
-</html>
-
+<BaseLayout>
+    Wilkommen auf der Startseite vom MTV Barfelde!
+</BaseLayout>

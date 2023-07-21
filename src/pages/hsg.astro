@@ -1,4 +1,5 @@
 ---
+import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 <script>
 (function(e,t,n,r,i,s,o){e[i]=e[i]||function(){(e[i].q=e[i].q||[]).push(arguments)}, e[i].l=1*new Date;s=t.createElement(n),o=t.getElementsByTagName(n)[0];s.async=1; s.src=r;o.parentNode.insertBefore(s,o)})(window,document,"script", 'https://www.handball.net/widgets/embed/v1.js',"_hb");
@@ -8,17 +9,8 @@ _hb({
     container: 'handball-spielplan'
 })
 </script>
-<!DOCTYPE html>
-<html lang="de">
-    <head>
-        <meta charset="utf-8" />
-        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-        <meta name="viewport" content="width=device-width" />
-        <meta name="generator" content={Astro.generator} />
-        <title>mtvbarfelde</title>
-    </head>
-    <body>
-        <h1>mtvbarfelde</h1>
-        <div id='handball-spielplan'></div>
-    </body>
-</html>
+
+<BaseLayout>
+    <h1>HSG 09 Gronau / Barfelde</h1>
+    <div id='handball-spielplan'></div>
+</BaseLayout>
