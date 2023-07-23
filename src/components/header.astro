@@ -7,17 +7,26 @@ const base_url = import.meta.env.BASE_URL
     color: #6c8644;
     background: #f9fcf7;
     align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 #header > * {
     margin-left: 1rem;
 }
 
-#title { 
-    font-size: 2rem;
+#title h1 { 
+    font-size: 2.5rem;
     font-weight: 900;
-    /* padding-left: 1rem; */
+    margin-top: 0em;
+    margin-bottom: 0em;
 }
+
+#title p { 
+    margin: 0px;
+    padding: 0px;
+}
+
 
 #navbar {
     padding: 1rem;
@@ -47,15 +56,18 @@ function header_dropdown(element: HTMLElement) {
 
 <div id="header">
     <img src="/wappen.png" alt="Wappen MTV Barfelde" width="80" height="80">
-    <h1 id="title">MTV Barfelde</h1>
+    <div id="title">
+        <h1>MTV Barfelde</h1>
+        <p>MännerTurnVerein von 1911 e.V.<p>
+    </div>
 </div>
 <div id="navbar">
-        <a href={base_url}>Aktuelles</a>
-        <a href={base_url + "ueber-uns"}>über uns ...</a>
-        <a href={base_url + "hsg"}>HSG 09</a>
-        <a href={base_url + "unser-sporthaus"}>Sporthaus</a>
-        <a href={base_url + "sportarten"}>Sportarten</a>
-        <a href={base_url + "dokumente"}>Dokumente</a>
-        <a href={base_url + "berichte"}>Berichte</a>
-        <a href={base_url + "sportversicherung"}>Sportversicherung</a>
+    <a href={base_url}>Aktuelles</a>
+    <a href={base_url + "ueber-uns"}>über uns ...</a>
+    <a href={base_url + "hsg"}>HSG 09</a>
+    <a href={base_url + "unser-sporthaus"}>Sporthaus</a>
+    <a href={base_url + "sportarten"}>Sportarten</a>
+    <a href={base_url + "dokumente"}>Dokumente</a>
+    <a href={base_url + "berichte"}>Berichte</a>
+    <a href={base_url + "sportversicherung"}>Sportversicherung</a>
 </div>
