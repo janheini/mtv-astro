@@ -1,5 +1,6 @@
 ---
 import Header from '../components/header.astro';
+const base_url = import.meta.env.BASE_URL
 ---
 <style is:global>
   body {
@@ -12,7 +13,7 @@ import Header from '../components/header.astro';
 <html lang="de">
     <head>
         <meta charset="utf-8" />
-        <link rel="icon" type="image/png" href="/wappen.png"/>
+        <link rel="icon" type="image/png" href={base_url + "/wappen.png"}/>
         <meta name="viewport" content="width=device-width" />
         <meta name="generator" content={Astro.generator} />
         <title>MTV Barfelde</title>
