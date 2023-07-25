@@ -23,7 +23,8 @@ export default defineConfig({
     },
 
     experimental: {
-        assets: true
+        assets: true,
+        viewTransitions: true,
     }
 
 });
