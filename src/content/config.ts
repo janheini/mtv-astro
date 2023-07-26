@@ -6,7 +6,7 @@ const berichte = defineCollection({
   type: 'content', // v2.5.0 and later
   schema: z.object({
     title: z.string(),
-    date: z.union([z.string(), z.date()]).optional(),
+    date: z.union([z.date(), z.string().transform((str) => new Date(str))]).optional(),
     tags: z.array(z.string()).optional(),
     image: z.string().optional(),
   }),
