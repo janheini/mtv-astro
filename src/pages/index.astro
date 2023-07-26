@@ -1,6 +1,34 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
+const allBlogPosts = await getCollection("berichte");
+
+function recentBlogPosts(count: number) {
+  return allBlogPosts
+    .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
+    .slice(0, count);
+}
+
+const base_url = import.meta.env.BASE_URL;
 ---
+
 <BaseLayout>
-    Wilkommen auf der Startseite vom MTV Barfelde!
+  <div>
+    <h1>Wilkommen auf der Startseite vom MTV Barfelde!</h1>
+  </div>
+
+  <div>Hier die neuesten drei Berichte:</div>
+
+  <div>
+    {
+      recentBlogPosts(3).map((post) => (
+        <>
+          <a href={base_url + "berichte/" + post.slug}>
+            {post.data.title} ({new Date(post.data.date).toLocaleDateString()})
+          </a>
+          <br />
+        </>
+      ))
+    }
+  </div>
 </BaseLayout>
