@@ -9,13 +9,13 @@ media_folder: "src/assets/"
 public_folder: "../../assets/"
 
 collections:
-  - name: berichte
-    label: Berichte
+  - name: bericht
+    label: Bericht
     folder: src/content/berichte/
     create: true
     slug: "{{slug}}"
     fields: # The fields for each document, usually in front matter
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Titel", name: "title", widget: "string"}
+      - {label: "Datum", name: "date", widget: "datetime"}
+      - {label: "Text", name: "body", widget: "markdown"}
 
