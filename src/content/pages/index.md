@@ -2,6 +2,8 @@
 events:
   - date: 19.08.2023
     name: Beachhandball
+  - date: 20.08.2023
+    name: Beachhandball
 ---
 # Herzlich willkommen beim MTV Barfelde
 
