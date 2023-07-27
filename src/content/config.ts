@@ -12,7 +12,18 @@ const berichte = defineCollection({
   }),
 });
 
+const pages = defineCollection({
+    type: 'content',
+    schema: z.object({
+        events: z.array(z.object({
+            date: z.string(),
+            name: z.string()
+        }))
+    })
+})
+
 // 3. Export a single `collections` object to register your collection(s)
 export const collections = {
-  'berichte': berichte
+    'berichte': berichte,
+    'pages': pages
 };

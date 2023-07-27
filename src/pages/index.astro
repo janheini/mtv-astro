@@ -1,7 +1,10 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import { getCollection } from "astro:content";
+import { getCollection, getEntry } from "astro:content";
+
 const allBlogPosts = await getCollection("berichte");
+const index = await getEntry("pages", "index");
+const { Content } = await index.render();
 
 function recentBlogPosts(count: number) {
   return allBlogPosts
@@ -11,14 +14,18 @@ function recentBlogPosts(count: number) {
 
 const base_url = import.meta.env.BASE_URL;
 ---
+<style>
+#content {
+    max-width: 50em;
+    margin: 0 auto;
+}
+</style>
 
 <BaseLayout>
-  <div>
-    <h1>Wilkommen auf der Startseite vom MTV Barfelde!</h1>
-  </div>
+  <div id="content">
+    <Content />
 
   <div>Hier die neuesten drei Berichte:</div>
-
   <div>
     {
       recentBlogPosts(3).map((post) => (
@@ -30,5 +37,6 @@ const base_url = import.meta.env.BASE_URL;
         </>
       ))
     }
+  </div>
   </div>
 </BaseLayout>

@@ -12,12 +12,13 @@ public_folder: "../../assets/"
 collections:
   - name: pages
     label: Seiten
+    label_singular: Seite
     files:
       - name: index
-        label: Startseite
-        file: src/content/pages/index.yml
+        label: Startseite / Aktuelles
+        file: src/content/pages/index.md
         fields:
-          - name: text
+          - name: body
             label: Text auf der Startseite
             widget: markdown
           - name: events
@@ -40,9 +41,11 @@ collections:
     label_singular: Bericht
     folder: src/content/berichte/
     create: true
-    slug: "{{slug}}"
+    summary: "{{title}} ({{day}}.{{month}}.{{year}})"
+    sortable_fields: [date]
     fields:
       - {label: "Titel", name: "title", widget: "string"}
-      - {label: "Bild", name: "thumbnail", widget: "image"}
+      - {label: "Author", name: "author", widget: "string", required: false}
+      - {label: "Titelbild", name: "thumbnail", widget: "image", required: false}
       - {label: "Datum", name: "date", widget: "datetime"}
       - {label: "Text", name: "body", widget: "markdown"}
