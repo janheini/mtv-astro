@@ -1,6 +1,7 @@
 # npx netlify-cms-proxy-server
 local_backend: true
 
+locale: 'de'
 backend:
   name: test-repo
 
@@ -9,13 +10,39 @@ media_folder: "src/assets/"
 public_folder: "../../assets/"
 
 collections:
+  - name: pages
+    label: Seiten
+    files:
+      - name: index
+        label: Startseite
+        file: src/content/pages/index.yml
+        fields:
+          - name: text
+            label: Text auf der Startseite
+            widget: markdown
+          - name: events
+            label: Events
+            label_singular: Event
+            widget: list
+            fields:
+              - name: name
+                label: Name
+                widget: string
+              - name: date
+                label: Datum
+                widget: datetime
+                date_format: "DD.MM.YYYY"
+                format: "DD.MM.YYYY"
+                time_format: false
+
   - name: bericht
-    label: Bericht
+    label: Berichte
+    label_singular: Bericht
     folder: src/content/berichte/
     create: true
     slug: "{{slug}}"
-    fields: # The fields for each document, usually in front matter
+    fields:
       - {label: "Titel", name: "title", widget: "string"}
+      - {label: "Bild", name: "thumbnail", widget: "image"}
       - {label: "Datum", name: "date", widget: "datetime"}
       - {label: "Text", name: "body", widget: "markdown"}
-
