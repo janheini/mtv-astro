@@ -21,4 +21,5 @@ pages:
       - .npm/
       - node_modules/
   script:
+    - echo "What is the $(locale)"
     - npm run build
