@@ -1,7 +1,7 @@
 ---
 title: "Die Jedermänner treten in die Pedale"
 date: "2021-07-31"
-categories: 
+categories:
   - "berichte"
 ---
 

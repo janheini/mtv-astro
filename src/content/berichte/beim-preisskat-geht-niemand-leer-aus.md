@@ -1,7 +1,7 @@
 ---
 title: "Beim Preisskat geht niemand leer aus"
 date: "2022-11-22"
-categories: 
+categories:
   - "berichte"
 ---
 

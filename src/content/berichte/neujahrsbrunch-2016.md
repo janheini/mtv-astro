@@ -1,7 +1,7 @@
 ---
 title: "Neujahrsbrunch 2016"
 date: "2016-01-01"
-categories: 
+categories:
   - "berichte"
 ---
 

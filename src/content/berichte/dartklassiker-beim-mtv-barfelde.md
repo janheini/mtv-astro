@@ -1,7 +1,7 @@
 ---
 title: "Dartklassiker beim MTV Barfelde"
 date: "2022-07-24"
-categories: 
+categories:
   - "berichte"
 ---
 

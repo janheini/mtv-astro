@@ -1,7 +1,7 @@
 ---
 title: "Beachhandball 2015"
 date: "2015-06-20"
-categories: 
+categories:
   - "berichte"
 ---
 

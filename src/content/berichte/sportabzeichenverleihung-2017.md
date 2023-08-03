@@ -1,7 +1,7 @@
 ---
 title: "Sportabzeichenverleihung 2017"
 date: "2017-01-30"
-categories: 
+categories:
   - "berichte"
 ---
 

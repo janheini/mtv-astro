@@ -1,7 +1,7 @@
 ---
 title: "Beachhandball 2018"
 date: "2018-08-18"
-categories: 
+categories:
   - "berichte"
 ---
 
@@ -30,45 +30,24 @@ Einen großen Dank nochmal an alle Helfer, ohne die dieses Turnier nicht hätte 
 5. Die Black Lions
 
 - ![](../../assets/berichte_beachhandball2018-03-1024x768.jpg)
-    
 - ![](../../assets/berichte_beachhandball2018-04-1024x768.jpg)
-    
 - ![](../../assets/berichte_beachhandball2018-05-1024x768.jpg)
-    
 - ![](../../assets/berichte_beachhandball2018-06-1024x768.jpg)
-    
 - ![](../../assets/berichte_beachhandball2018-07-1024x768.jpg)
-    
 - ![](../../assets/berichte_beachhandball2018-08-1024x768.jpg)
-    
 - ![](../../assets/berichte_beachhandball2018-09-1024x768.jpg)
-    
 - ![](../../assets/berichte_beachhandball2018-10-1024x768.jpg)
-    
 - ![](../../assets/berichte_beachhandball2018-11-1024x768.jpg)
-    
 - ![](../../assets/berichte_beachhandball2018-12-1024x768.jpg)
-    
 - ![](../../assets/berichte_beachhandball2018-13-1024x768.jpg)
-    
 - ![](../../assets/berichte_beachhandball2018-14-1024x768.jpg)
-    
 - ![](../../assets/berichte_beachhandball2018-15-1024x768.jpg)
-    
 - ![](../../assets/berichte_beachhandball2018-16-1024x768.jpg)
-    
 - ![](../../assets/berichte_beachhandball2018-17-1024x768.jpg)
-    
 - ![](../../assets/berichte_beachhandball2018-18-1024x768.jpg)
-    
 - ![](../../assets/berichte_beachhandball2018-19-1024x768.jpg)
-    
 - ![](../../assets/berichte_beachhandball2018-20-1024x768.jpg)
-    
 - ![](../../assets/berichte_beachhandball2018-21-1024x768.jpg)
-    
 - ![](../../assets/berichte_beachhandball2018-22-1024x768.jpg)
-    
 - ![](../../assets/berichte_beachhandball2018-01-1024x768.jpg)
-    
 - ![](../../assets/berichte_beachhandball2018-02-1024x768.jpg)

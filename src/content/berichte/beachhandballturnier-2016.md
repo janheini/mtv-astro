@@ -1,7 +1,7 @@
 ---
 title: "Beachhandballturnier 2016"
 date: "2016-08-28"
-categories: 
+categories:
   - "berichte"
 ---
 
@@ -27,7 +27,7 @@ Ergebnisse Damenturnier
 
 1. Die Sandflöhe
 2. Die Beachies  
-    Teamplayer
+   Teamplayer
 3. Baywatch
 4. Golden Girls
 

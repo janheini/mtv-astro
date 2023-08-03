@@ -1,7 +1,7 @@
 ---
 title: "Preisskat 2015"
 date: "2015-11-21"
-categories: 
+categories:
   - "berichte"
 ---
 

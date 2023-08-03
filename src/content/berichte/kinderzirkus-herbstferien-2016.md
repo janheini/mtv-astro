@@ -1,7 +1,7 @@
 ---
 title: "Kinderzirkus Herbstferien 2016"
 date: "2016-10-04"
-categories: 
+categories:
   - "berichte"
 ---
 

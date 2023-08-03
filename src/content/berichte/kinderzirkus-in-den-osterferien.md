@@ -1,7 +1,7 @@
 ---
 title: "Kinderzirkus in den Osterferien"
 date: "2023-04-11"
-categories: 
+categories:
   - "berichte"
 ---
 

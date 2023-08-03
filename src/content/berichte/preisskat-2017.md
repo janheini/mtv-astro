@@ -1,7 +1,7 @@
 ---
 title: "Preisskat 2017"
 date: "2017-11-23"
-categories: 
+categories:
   - "berichte"
 ---
 

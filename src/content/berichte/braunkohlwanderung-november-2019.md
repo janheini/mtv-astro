@@ -1,7 +1,7 @@
 ---
 title: "Braunkohlwanderung November 2019"
 date: "2019-11-01"
-categories: 
+categories:
   - "berichte"
 coverImage: "2-e1591014059344.jpeg"
 ---
@@ -17,9 +17,6 @@ Es gab durchweg nur positive Rückmeldungen. Deshalb überlegt der Vorstand im n
 #### **Vielen Dank nochmal an alle Helfer !**
 
 - ![](../../assets/6.jpeg)
-    
 - ![](../../assets/5-e1591014201862.jpeg)
-    
 - ![](../../assets/4.jpeg)
-    
 - ![](../../assets/3.jpeg)

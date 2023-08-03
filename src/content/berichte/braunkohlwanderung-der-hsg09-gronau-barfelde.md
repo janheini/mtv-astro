@@ -1,7 +1,7 @@
 ---
 title: "Braunkohlwanderung der HSG09 Gronau/Barfelde"
 date: "2023-02-28"
-categories: 
+categories:
   - "berichte"
 ---
 

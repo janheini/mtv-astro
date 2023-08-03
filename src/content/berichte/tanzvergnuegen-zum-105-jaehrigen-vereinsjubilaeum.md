@@ -1,7 +1,7 @@
 ---
 title: "Tanzvergnügen zum 105-jährigen Vereinsjubiläum"
 date: "2016-10-01"
-categories: 
+categories:
   - "berichte"
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "Einladung zum Beachhandballturnier 2023"
 date: "2023-05-21"
-categories: 
+categories:
   - "berichte"
 ---
 

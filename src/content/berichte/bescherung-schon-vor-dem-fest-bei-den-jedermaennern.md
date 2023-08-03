@@ -1,7 +1,7 @@
 ---
 title: "Bescherung schon vor dem Fest bei den Jedermännern"
 date: "2016-12-19"
-categories: 
+categories:
   - "berichte"
 ---
 

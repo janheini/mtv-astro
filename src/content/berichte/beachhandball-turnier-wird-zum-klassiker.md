@@ -1,7 +1,7 @@
 ---
 title: "Beachhandball-Turnier wird zum Klassiker"
 date: "2022-08-25"
-categories: 
+categories:
   - "berichte"
 ---
 

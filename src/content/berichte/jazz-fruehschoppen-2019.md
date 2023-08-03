@@ -1,7 +1,7 @@
 ---
 title: "Jazz-Frühschoppen 2019"
 date: "2019-07-21"
-categories: 
+categories:
   - "berichte"
 coverImage: "Jazz-Frühschoppen.jpg"
 ---
@@ -12,7 +12,7 @@ Seit über 40 Jahren geben sie in ganz Deutschland Konzerte und es macht ihnen i
 
 "Madison Skiffle Company"
 
-am Sonntag, den 21. Juli 2019 beim 1.Jazz-Frühschoppen auf dem Barfelder Sportplatz. 
+am Sonntag, den 21. Juli 2019 beim 1.Jazz-Frühschoppen auf dem Barfelder Sportplatz.
 
 Da in diesem Jahr kein Beachhandball stattfand, waren wir auf der Suche nach einem besonderen Event, dass vor allem auch mal die ältere Generation anspricht. Unser Vorstandsmitglied Jürgen Klingebiel kam auf die Idee, die Madison Skiffle Company einzuladen. Die Hildesheimer Musiker waren sofort zu einem Auftritt bereit.
 

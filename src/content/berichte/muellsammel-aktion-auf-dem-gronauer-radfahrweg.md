@@ -1,7 +1,7 @@
 ---
 title: "Müllsammel-Aktion auf dem Gronauer Radfahrweg"
 date: "2016-05-07"
-categories: 
+categories:
   - "berichte"
 ---
 

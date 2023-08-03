@@ -1,7 +1,7 @@
 ---
 title: "Sporthausumbau abgeschlossen - Helferparty"
 date: "2016-01-12"
-categories: 
+categories:
   - "berichte"
 ---
 

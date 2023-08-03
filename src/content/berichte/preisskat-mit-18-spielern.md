@@ -1,7 +1,7 @@
 ---
 title: "Preisskat mit 18 Spielern"
 date: "2021-11-22"
-categories: 
+categories:
   - "berichte"
 coverImage: "Preisskat-1-scaled.jpg"
 ---

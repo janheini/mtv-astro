@@ -1,7 +1,7 @@
 ---
 title: "Henning Koch kündigt Rückzug an"
 date: "2023-04-24"
-categories: 
+categories:
   - "berichte"
 ---
 

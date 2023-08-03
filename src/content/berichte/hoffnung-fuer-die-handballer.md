@@ -1,7 +1,7 @@
 ---
 title: "Hoffnung für die Handballer"
 date: "2022-04-24"
-categories: 
+categories:
   - "berichte"
 ---
 
@@ -17,7 +17,7 @@ Bei den anstehenden Wahlen gab es durchweg einstimmige Ergebnisse. Neben dem Vor
 
 Wie Schriftführerin Dunja Heinemeyer berichtete, hat sich der MTV in diesem Jahr viel vorgenommen. So ist am 2. Juli ein Preis-Dart und am 20. August ein Beachhandball-Turnier für Freizeitmannschaften geplant. Höhepunkt der Veranstaltungen soll das Tanzvergnügen im bayerischen Stil am 15. Oktober sein. Dann soll auch das coronabedingte ausgefallene 110-jährige Vereinsjubiläum mit einem Jazz-Konzert und der Ehrung langjähriger Mitglieder nachgeholt werden. Einen Tag später findet der Volkswandertag statt, bevor am 19. November der Preisskat und am 26. November eine Braunkohlwanderung den Jahresabschluss bilden. Darüber hinaus will sich der MTV Barfelde am 13. Juli im Freibad Gronau am „Tag der Vereine“ präsentieren.
 
-Für den 21. Mai bat Hening Koch die Vereinsmitglieder um 15 Uhr zu einem Arbeitseinsatz auf dem Barfelder Sportplatz. An diesem Nachmittag soll das Beachhandball-Feld hergerichtet und anschließend gegrillt werden.   
+Für den 21. Mai bat Hening Koch die Vereinsmitglieder um 15 Uhr zu einem Arbeitseinsatz auf dem Barfelder Sportplatz. An diesem Nachmittag soll das Beachhandball-Feld hergerichtet und anschließend gegrillt werden.
 
 ![Der Vorstand des MTV](../../assets/Vorstand-1-1024x731.jpg)
 

@@ -1,7 +1,7 @@
 ---
 title: "Aquarell ziert das Sporthaus"
 date: "2016-03-14"
-categories: 
+categories:
   - "berichte"
 ---
 

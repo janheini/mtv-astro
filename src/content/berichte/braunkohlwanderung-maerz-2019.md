@@ -1,7 +1,7 @@
 ---
 title: "Braunkohlwanderung März 2019"
 date: "2019-03-31"
-categories: 
+categories:
   - "berichte"
 coverImage: "3-scaled.jpg"
 ---

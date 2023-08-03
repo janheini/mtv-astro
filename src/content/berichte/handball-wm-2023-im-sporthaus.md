@@ -1,7 +1,7 @@
 ---
 title: "Handball-WM 2023 im Sporthaus"
 date: "2023-02-06"
-categories: 
+categories:
   - "berichte"
 ---
 

@@ -1,7 +1,7 @@
 ---
-title: "Braunkohlwanderung zum \"Kleehus\""
+title: 'Braunkohlwanderung zum "Kleehus"'
 date: "2023-01-01"
-categories: 
+categories:
   - "berichte"
 ---
 

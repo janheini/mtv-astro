@@ -1,7 +1,7 @@
 ---
 title: "Kinderzirkus Osterferien 2016"
 date: "2016-03-22"
-categories: 
+categories:
   - "berichte"
 ---
 

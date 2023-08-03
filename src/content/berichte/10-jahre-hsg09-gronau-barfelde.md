@@ -1,7 +1,7 @@
 ---
 title: "10 Jahre HSG 09 Gronau/Barfelde"
 date: "2019-07-02"
-categories: 
+categories:
   - "hsg"
 coverImage: "3-scaled-e1591015218445.jpg"
 ---
@@ -17,5 +17,4 @@ Am Samstag tobten sich zunächst die "Großen" beim Rasen-Kleinfeld- und Beachha
 Am Sonntag waren dann die "Kleinen" auf dem Barfelder Sportplatz an der Reihe. Bei einer Spaß-Olympiade zeigten die Kids zwischen 5 und 14 Jahren was sie alles drauf haben. Durch die heißen Temperaturen war die Veranstaltung zwar nach einer guten Stunde schon beendet, aber die Jüngsten der HSG09 freuten sich bei der Siegerehrung über "Süßes" und ein grünes Armband, das alle an das 10-Jährige Jubiläum der HSG09 erinnert.
 
 - ![](../../assets/6-1024x698.jpg)
-    
 - ![](../../assets/4-1024x493.jpg)

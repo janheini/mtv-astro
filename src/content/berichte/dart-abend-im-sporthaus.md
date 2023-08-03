@@ -1,7 +1,7 @@
 ---
 title: "Dart-Abend im Sporthaus"
 date: "2023-03-06"
-categories: 
+categories:
   - "berichte"
 ---
 

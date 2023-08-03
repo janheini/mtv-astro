@@ -1,13 +1,12 @@
 ---
 title: "Neues Beachhandballfeld auf dem Sportplatz"
 date: "2016-01-12"
-categories: 
+categories:
   - "berichte"
 ---
 
 **Wie kriegen wir 330 Quadratmeter Wüste auf den Sportplatz ???**
 
-  
 Eine Punktlandung im Kalender wäre es wohl mit 5.400 Sandsäcken á 25 Kilo aus dem Hagebau nicht geworden. Schon allein die Entsorgung der ollen Plastiktüten hätte Tage und Unmengen an Gelben Säcken gekostet.
 
 Scherz beiseite ... wir mussten 135 Tonnen vom besten Spielplatzsand für das Spielfeld bestellen. Insgesamt 5 mal musste der 40-Tonner aus Hemmingen mit 27 Tonnen Ladung rückwärts die Sportplatzauffahrt hinauffahren, bis das Spielfeld ausreichend mit Sand befüllt war. Und damit nicht genug. Auf dem Haufen aufgeschüttet erwies sich die Menge doch als etwas zu groß um sie mit der Hand zu verteilen.
