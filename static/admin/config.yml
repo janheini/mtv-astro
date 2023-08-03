@@ -1,7 +1,7 @@
 # npx netlify-cms-proxy-server
 local_backend: true
 
-locale: 'de'
+locale: "de"
 backend:
   name: test-repo
 
@@ -44,8 +44,13 @@ collections:
     summary: "{{title}} ({{day}}.{{month}}.{{year}})"
     sortable_fields: [date]
     fields:
-      - {label: "Titel", name: "title", widget: "string"}
-      - {label: "Author", name: "author", widget: "string", required: false}
-      - {label: "Titelbild", name: "thumbnail", widget: "image", required: false}
-      - {label: "Datum", name: "date", widget: "datetime"}
-      - {label: "Text", name: "body", widget: "markdown"}
+      - { label: "Titel", name: "title", widget: "string" }
+      - { label: "Author", name: "author", widget: "string", required: false }
+      - {
+          label: "Titelbild",
+          name: "thumbnail",
+          widget: "image",
+          required: false,
+        }
+      - { label: "Datum", name: "date", widget: "datetime" }
+      - { label: "Text", name: "body", widget: "markdown" }
