@@ -14,41 +14,9 @@ export async function getStaticPaths() {
 const { post } = Astro.props;
 const { Content } = await post.render();
 ---
-<style>
-#content {
-    max-width: 50em;
-    margin: 0 auto;
-}
-
-#title-and-date {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-}
-
-#title-and-date * {
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
-#title-and-date p {
-    margin-left: 1em;
-}
-
-Content :global(p) {
-    max-width: 100%;
-    text-align: justify;
-}
-
-Content :global(img) {
-  max-width: 100%;
-  height: auto;
-}
-
-</style>
 <BaseLayout>
-    <div id="content">
-        <div id="title-and-date">
+    <div class="prose max-w-xl m-auto">
+        <div>
             <h1>{post.data.title}</h1>
             <p id="date">{new Date(post.data.date).toLocaleDateString()}</p>
         </div>

@@ -14,35 +14,37 @@ function recentBlogPosts(count: number) {
 
 const base_url = import.meta.env.BASE_URL;
 ---
-<style>
-#content {
-    max-width: 50em;
-    margin: 0 auto;
-}
-</style>
 
 <BaseLayout>
-  <div id="content">
-    <Content />
+  <div class="flex justify-between">
+    <div class="prose max-w-screen-lg mx-32">
+      <Content />
+      <div class="my-16">
+        Hier die neuesten drei Berichte:
+        <div class="block">
+        {
+          recentBlogPosts(3).map((post) => (
+              <a href={base_url + "berichte/" + post.slug}>
+                {post.data.title} (
+                {new Date(post.data.date).toLocaleDateString()})
+              </a>
+          ))
+        }
+        </div>
+      </div>
+    </div>
 
-        <ul>
-        {index.data.events.map((event) => ( 
-            <li>{event.date} - {event.name}</li>
-        ))}
-        </ul>
-
-  <div>Hier die neuesten drei Berichte:</div>
-  <div>
-    {
-      recentBlogPosts(3).map((post) => (
-        <>
-          <a href={base_url + "berichte/" + post.slug}>
-            {post.data.title} ({new Date(post.data.date).toLocaleDateString()})
-          </a>
-          <br />
-        </>
-      ))
-    }
-  </div>
+    <div class="prose prose-sm mx-32">
+      <h3>aktuelle Events</h3>
+      <ul>
+        {
+          index.data.events.map((event) => (
+            <li>
+              {event.date} - {event.name}
+            </li>
+          ))
+        }
+      </ul>
+    </div>
   </div>
 </BaseLayout>

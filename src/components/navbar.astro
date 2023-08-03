@@ -1,0 +1,27 @@
+---
+const base_url = import.meta.env.BASE_URL;
+---
+
+<div>
+  <nav class="flex items-center bg-white space-x-10 p-3 mb-8 font-bold">
+    <a class="hover:text-primary" href={base_url}>Aktuelles</a>
+    <a class="hover:text-primary" href={base_url + "ueber-uns"}>über uns ...</a>
+    <a class="hover:text-primary" href={base_url + "hsg"}>HSG 09</a>
+    <a class="hover:text-primary" href={base_url + "unser-sporthaus"}
+      >Sporthaus</a
+    >
+    <a class="hover:text-primary" href={base_url + "sportarten"}>Sportarten</a>
+    <a class="hover:text-primary" href={base_url + "dokumente"}>Dokumente</a>
+    <a class="hover:text-primary" href={base_url + "berichte"}>Berichte</a>
+    <div class="group relative">
+      <a class="hover:text-primary" href={base_url + "sportversicherung"}
+        >Sportversicherung</a
+      >
+      <div class="bg-white absolute w-full px-4 hidden group-hover:block">
+        <a href="" class="block py-2 hover:text-primary">Link1</a>
+        <a href="" class="block py-2 hover:text-primary">Link2</a>
+        <a href="" class="block py-2 hover:text-primary">Link3</a>
+      </div>
+    </div>
+  </nav>
+</div>
