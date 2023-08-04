@@ -16,35 +16,37 @@ const base_url = import.meta.env.BASE_URL;
 ---
 
 <BaseLayout>
-  <div class="flex justify-between">
-    <div class="prose max-w-screen-lg mx-32">
+  <div class="flex flex-wrap justify-evenly mx-4 gap-16">
+    <div class="prose">
       <Content />
-      <div class="my-16">
-        Hier die neuesten drei Berichte:
-        <div class="block">
-        {
-          recentBlogPosts(3).map((post) => (
-              <a href={base_url + "berichte/" + post.slug}>
-                {post.data.title} (
-                {new Date(post.data.date).toLocaleDateString()})
-              </a>
-          ))
-        }
-        </div>
-      </div>
     </div>
 
-    <div class="prose prose-sm mx-32">
-      <h3>aktuelle Events</h3>
-      <ul>
+    <div class="">
+      <h3 class="font-bold">aktuelle Events</h3>
         {
           index.data.events.map((event) => (
-            <li>
+            <div>
               {event.date} - {event.name}
-            </li>
+            </div>
           ))
         }
-      </ul>
+    </div>
+
+    <div class="">
+      <h3 class="font-bold">Hier die neuesten drei Berichte:</h3>
+      <div class="">
+        {
+          recentBlogPosts(3).map((post) => (
+            <a
+              href={base_url + "berichte/" + post.slug}
+              class="block hover:text-primary"
+            >
+              {post.data.title} ({new Date(post.data.date).toLocaleDateString()}
+              )
+            </a>
+          ))
+        }
+      </div>
     </div>
   </div>
 </BaseLayout>
