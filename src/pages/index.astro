@@ -16,12 +16,12 @@ const base_url = import.meta.env.BASE_URL;
 ---
 
 <BaseLayout>
-  <div class="flex flex-wrap justify-evenly mx-4 gap-16">
-    <div class="prose">
+  <div class="flex flex-wrap justify-between gap-4 mx-8">
+    <div class="prose lg:mx-16">
       <Content />
     </div>
 
-    <div class="">
+    <div class="lg:mx-16">
       <h3 class="font-bold">aktuelle Events</h3>
         {
           index.data.events.map((event) => (
@@ -32,7 +32,7 @@ const base_url = import.meta.env.BASE_URL;
         }
     </div>
 
-    <div class="">
+    <div class="lg:mx-16">
       <h3 class="font-bold">Hier die neuesten drei Berichte:</h3>
       <div class="">
         {
