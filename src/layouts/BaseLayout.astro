@@ -1,6 +1,6 @@
 ---
 import Header from "../components/header.astro";
-import Navbar from "../components/navbar.astro";
+import Navbar from "../components/navbar_buttons.astro";
 import Footer from "../components/footer.astro";
 import { ViewTransitions } from "astro:transitions";
 const base_url = import.meta.env.BASE_URL;
@@ -16,7 +16,7 @@ const base_url = import.meta.env.BASE_URL;
     <title>MTV Barfelde</title>
     <ViewTransitions />
   </head>
-  <body class="flex flex-col min-h-screen">
+  <body class="flex flex-col min-h-screen bg-white">
     <Header />
     <Navbar />
     <div class="flex-grow">
