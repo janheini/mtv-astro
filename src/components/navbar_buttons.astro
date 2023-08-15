@@ -39,7 +39,7 @@ const menu = [
       stroke-width="2"
       stroke-linecap="round"></path></svg
   ></button>
-  {menu.map((item) => <button class="hover:text-primary w-max hidden mr-8 lg:mr-0 lg:block">{item.text}</button>)}
+  {menu.map((item) => <button class="hover:text-primary w-max hidden mr-8 lg:mr-0 lg:block"><a href={item.link}>{item.text}</a></button>)}
 
   <!-- <button class="group relative hover:text-primary"> -->
   <!--   <span -->
