@@ -1,0 +1,59 @@
+---
+const base_url = import.meta.env.BASE_URL;
+
+const menu = [
+  {
+    text: "Aktuelles",
+    link: base_url,
+  },
+  {
+    text: "über uns ...",
+    link: base_url + "ueber-uns",
+  },
+  {
+    text: "HSG 09",
+    link: base_url + "hsg",
+  },
+  {
+    text: "Sporthaus",
+    link: base_url + "unser-sporthaus",
+  },
+  {
+    text: "Sportarten",
+    link: base_url + "sportarten",
+  },
+  {
+    text: "Berichte",
+    link: base_url + "berichte",
+  },
+];
+
+const logo = '<svg width="24" height="24"><path d="M5 6h14M5 12h14M5 18h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path></svg>'
+---
+<nav>
+    <details id="menu" class="cursor-pointer" open>
+        <summary class="lg:hidden block p-2">
+            <svg width="24" height="24">
+                <path d="M5 6h14M5 12h14M5 18h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                </path>
+            </svg>
+        </summary>
+        {menu.map((item) => <a href={item.link} class="p-2 min-w-fit whitespace-nowrap block lg:inline">{item.text}</a>)}
+    </details>
+</nav>
+
+<script>
+const menu = document.getElementById("menu");
+
+function toggleMenu() {
+    if (window.screen.width < 1024) {
+        console.log("small");
+        menu.open = false;
+    } else {
+        menu.open = true;
+    }
+}
+
+toggleMenu();
+window.addEventListener("resize", toggleMenu);
+</script>
