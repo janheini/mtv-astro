@@ -27,33 +27,7 @@ const menu = [
     link: base_url + "berichte",
   },
 ];
-
-const logo = '<svg width="24" height="24"><path d="M5 6h14M5 12h14M5 18h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path></svg>'
 ---
-<nav>
-    <details id="menu" class="cursor-pointer" open>
-        <summary class="lg:hidden block p-2">
-            <svg width="24" height="24">
-                <path d="M5 6h14M5 12h14M5 18h14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
-                </path>
-            </svg>
-        </summary>
-        {menu.map((item) => <a href={item.link} class="p-2 min-w-fit whitespace-nowrap block lg:inline">{item.text}</a>)}
-    </details>
+<nav class="py-4 overflow-x-auto">
+    {menu.map((item) => <a href={item.link} class="p-4 min-w-fit whitespace-nowrap">{item.text}</a>)}
 </nav>
-
-<script>
-const menu = document.getElementById("menu");
-
-function toggleMenu() {
-    if (window.screen.width < 1024) {
-        console.log("small");
-        menu.open = false;
-    } else {
-        menu.open = true;
-    }
-}
-
-toggleMenu();
-window.addEventListener("resize", toggleMenu);
-</script>
