@@ -53,52 +53,19 @@ const menu = [
   },
 ];
 ---
-
-<nav
-  class="grid grid-flow-row justify-end lg:hidden lg:grid-flow-col lg:justify-start auto-cols-max gap-x-8 gap-y-8 bg-white p-3 mb-8 font-bold"
->
-  <button id="menu" value="hide" class="lg:hidden justify-self-end"><svg width="24" height="24"
-    ><path
-      d="M5 6h14M5 12h14M5 18h14"
-      fill="none"
-      stroke="currentColor"
-      stroke-width="2"
-      stroke-linecap="round"></path></svg
-  ></button>
-  {menu.map((item) => <button class="hover:text-primary w-max hidden mr-8 lg:mr-0 lg:block"><a href={item.link}>{item.text}</a></button>)}
-</nav>
-
-<script defer>
-const button = document.getElementById("menu");
-button.addEventListener("click", () => {
-    const navbar = button.parentElement.children;
-    if (button.value === "hide") {
-        button.value = "show";
-        for (i = 1; i < navbar.length; i++) {
-            navbar.item(i).style.display = "block";
-        }
-    } else {
-        button.value = "hide";
-        for (i = 1; i < navbar.length; i++) {
-            navbar.item(i).style.display = "none";
-        }
-    }
-});
-</script>
-
-<nav
-  class="hidden lg:flex flex-none flex-wrap items-center gap-x-8 gap-y-8 bg-white p-3 mb-8 font-bold"
->
+<button class="mobile-menu-button lg:hidden p-2">Menü</button>
+<nav class="grid grid-flow-row lg:grid-flow-col justify-center lg:justify-start justify-items-center lg:justify-items-start p-4 gap-x-10 gap-y-4 bg-white font-bold">
   {
     menu.map((item) => (
-      <button class="group relative">
-        <a class="hover:text-primary" href={item.link}>
+      <button class="group relative" submenu-button>
+        <a class="topmenu-link hover:text-primary" href={item.link}>
           {item.text}
         </a>
         {item.submenu && (
-          <div class="bg-white absolute w-full px-4 hidden group-hover:block group-focus-within:block">
+    <svg class="inline" width="20" height="20" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 6H11L7.5 10.5L4 6Z" fill="currentColor"></path></svg>
+          <div class="submenu hidden bg-white absolute w-max px-4 group-hover:block border-solid border border-t-0 rounded shadow z-10">
             {item.submenu.map((item) => (
-              <a href={item.link} class="block py-2 hover:text-primary">
+              <a href={item.link} class="block whitespace-nowrap py-2 hover:text-primary text-left">
                 {item.text}
               </a>
             ))}
@@ -108,3 +75,33 @@ button.addEventListener("click", () => {
     ))
   }
 </nav>
+
+<script>
+const buttons = document.querySelectorAll('[submenu-button]');
+buttons.forEach((button) => {
+    // button.querySelector(".topmenu-link")?.addEventListener("click", (e) => {
+    //     e.preventDefault();
+    // });
+    button.addEventListener('click', () => {
+        button.getElementsByClassName("submenu")[0].classList.toggle("hidden");
+    });
+});
+
+const mmb = document.querySelector('.mobile-menu-button');
+const navbar = document.querySelector('nav');
+mmb?.addEventListener('click', () => {
+    navbar?.classList.toggle('hidden');
+})
+
+window.addEventListener('resize', () => {
+    if (window.visualViewport?.width < 1024) {
+        navbar?.classList.add('hidden');
+    } else {
+        navbar?.classList.remove('hidden');
+    }
+});
+
+if (window.visualViewport?.width < 1024) {
+    navbar?.classList.add('hidden');
+}
+</script>
