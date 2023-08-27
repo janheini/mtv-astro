@@ -63,9 +63,9 @@ const menu = [
         </a>
         {item.submenu && (
     <svg class="inline" width="20" height="20" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 6H11L7.5 10.5L4 6Z" fill="currentColor"></path></svg>
-          <div class="submenu hidden bg-white absolute w-max px-4 group-hover:block border-solid border border-t-0 rounded shadow z-10">
+          <div class="submenu hidden lg:bg-white lg:absolute w-screen lg:w-max px-4 group-hover:block border-solid border bg-background lg:border-t-0 rounded shadow z-10">
             {item.submenu.map((item) => (
-              <a href={item.link} class="block whitespace-nowrap py-2 hover:text-primary text-left">
+              <a href={item.link} class="block whitespace-nowrap py-2 hover:text-primary lg:text-left">
                 {item.text}
               </a>
             ))}
@@ -79,9 +79,6 @@ const menu = [
 <script>
 const buttons = document.querySelectorAll('[submenu-button]');
 buttons.forEach((button) => {
-    // button.querySelector(".topmenu-link")?.addEventListener("click", (e) => {
-    //     e.preventDefault();
-    // });
     button.addEventListener('click', () => {
         button.getElementsByClassName("submenu")[0].classList.toggle("hidden");
     });
@@ -94,14 +91,14 @@ mmb?.addEventListener('click', () => {
 })
 
 window.addEventListener('resize', () => {
-    if (window.visualViewport?.width < 1024) {
+    if (window.visualViewport && window.visualViewport.width < 1024) {
         navbar?.classList.add('hidden');
     } else {
         navbar?.classList.remove('hidden');
     }
 });
 
-if (window.visualViewport?.width < 1024) {
+if (window.visualViewport && window.visualViewport.width < 1024) {
     navbar?.classList.add('hidden');
 }
 </script>
