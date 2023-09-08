@@ -3,10 +3,10 @@ title: "Jazz-Frühschoppen 2019"
 date: "2019-07-21"
 categories:
   - "berichte"
-coverImage: "Jazz-Frühschoppen.jpg"
+coverImage: "Jazz-Fruehschoppen.jpg"
 ---
 
-![](../../assets/Jazz-Frühschoppen-1024x504.jpg)
+![](../../assets/Jazz-Fruehschoppen-1024x504.jpg)
 
 Seit über 40 Jahren geben sie in ganz Deutschland Konzerte und es macht ihnen immer noch großen Spaß. Dass sie auch nach so langer Zeit nicht in die Jahre gekommen sind und es immer noch drauf haben, bewiesen die Männer von der
 
