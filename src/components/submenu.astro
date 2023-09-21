@@ -1,0 +1,35 @@
+---
+const { item } = Astro.props;
+---
+
+<input id={item.text} class="peer appearance-none" type="checkbox" />
+<label
+  for={item.text}
+  class="cursor-pointer absolute lg:static right-10 lg:right-0 lg:pl-1"
+>
+  <svg
+    class="inline"
+    width="25"
+    height="25"
+    viewBox="0 0 15 15"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    ><path d="M4 6H11L7.5 10.5L4 6Z" fill="currentColor"></path></svg
+  >
+</label>
+<div
+  class="submenu hidden lg:bg-white lg:absolute w-screen lg:w-max pt-2 lg:pt-1 group-hover:block peer-checked:block lg:border-t-0"
+>
+  <div class="border bg-background lg:rounded shadow py-1 lg:px-4 z-10">
+    {
+      item.submenu.map((item) => (
+        <a
+          href={item.link}
+          class="block whitespace-nowrap py-2 hover:text-primary lg:text-left"
+        >
+          {item.text}
+        </a>
+      ))
+    }
+  </div>
+</div>
