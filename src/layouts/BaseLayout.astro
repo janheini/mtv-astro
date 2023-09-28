@@ -15,10 +15,10 @@ const base_url = import.meta.env.BASE_URL;
     <meta name="generator" content={Astro.generator} />
     <title>MTV Barfelde</title>
   </head>
-  <body class="flex flex-col min-h-screen bg-white">
+  <body class="flex flex-col min-h-screen bg-base-100">
     <Header />
     <Navbar />
-    <div class="flex-grow">
+    <div class="flex-grow py-2">
       <slot />
     </div>
     <Footer />
