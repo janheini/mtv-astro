@@ -1,0 +1,29 @@
+---
+import { Image } from "astro:assets";
+import wappen from "../assets/wappen.png";
+---
+
+<div class="flex items-center bg-neutral p-2 sm:p-3">
+  <a href="/" class="hidden min-w-fit pr-4 sm:block">
+    <Image
+      src={wappen}
+      alt="Wappen MTV Barfelde"
+      class="aspect-square w-20"
+      loading="eager"
+    />
+  </a>
+  <div class="w-full">
+    <a href="/" class="float-right pl-2 pr-4 sm:hidden">
+      <Image
+        src={wappen}
+        alt="Wappen MTV Barfelde"
+        class="aspect-square w-16"
+        loading="eager"
+      />
+    </a>
+    <a href="/">
+      <h1 class="text-4xl font-black text-primary sm:text-5xl">MTV Barfelde</h1>
+      <p class="text-primary">MännerTurnVerein von 1911 e.V.</p>
+    </a>
+  </div>
+</div>
