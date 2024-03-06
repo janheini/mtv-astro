@@ -1,0 +1,59 @@
+---
+// https://docs.astro.build/en/guides/styling/#passing-a-class-to-a-child-component
+const { class: className, ...rest } = Astro.props;
+---
+
+<ul class={className} {...rest}>
+  <li class="py-1 lg:px-1 lg:py-0"><a href="/">Aktuelles</a></li>
+  <li class="py-1 lg:px-1 lg:py-0">
+    <details>
+      <summary>über uns...</summary>
+      <ul>
+        <li><a>über uns...</a></li>
+        <li><a>Alles auf einen Blick</a></li>
+        <li><a>Sportversicherung</a></li>
+      </ul>
+    </details>
+  </li>
+  <li class="py-1 lg:px-1 lg:py-0">
+    <details>
+      <summary>HSG 09</summary>
+      <ul>
+        <li class="break-word whitespace-normal">
+          <a>HSG 09 Gronau/Barfelde</a>
+        </li>
+        <li><a>Vorstand</a></li>
+        <li><a>Trainingszeiten</a></li>
+        <li><a>Newsletter</a></li>
+        <li><a>Spielplan</a></li>
+      </ul>
+    </details>
+  </li>
+  <li class="py-1 lg:px-1 lg:py-0">
+    <details>
+      <summary>Sporthaus</summary>
+      <ul>
+        <li><a>Unser Sporthaus</a></li>
+        <li><a>Miete / Preise</a></li>
+        <li><a>Belegungsplan</a></li>
+      </ul>
+    </details>
+  </li>
+  <li class="py-1 lg:px-1 lg:py-0">
+    <details>
+      <summary> Sportarten </summary>
+      <ul>
+        <li><a>Überblick Sportarten</a></li>
+        <li><a>Gymnastikdamen</a></li>
+        <li><a>FitForFun</a></li>
+        <li><a>Jedermänner</a></li>
+        <li><a>Bauch-Beine-Po</a></li>
+        <li><a>Fatburner Step</a></li>
+        <li><a>Zumba</a></li>
+        <li><a>Eltern-Kind-Turnen</a></li>
+        <li><a>Kinderzumba</a></li>
+      </ul>
+    </details>
+  </li>
+  <li class="py-1 lg:px-1 lg:py-0"><a>Berichte</a></li>
+</ul>
