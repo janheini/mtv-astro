@@ -18,7 +18,9 @@ export async function getStaticPaths() {
 ---
 
 <BaseLayout>
-  <div class="prose">
-    <Fragment set:html={content} />
+  <div class="min-w-full px-40">
+    <div class="prose">
+      <Fragment set:html={content} />
+    </div>
   </div>
 </BaseLayout>

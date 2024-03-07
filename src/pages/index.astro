@@ -7,7 +7,9 @@ const page = await fetch(`${import.meta.env.API_URL}/pages/4703`).then(
 ---
 
 <BaseLayout>
-  <div class="prose">
-    <Fragment set:html={page.content.rendered} />
+  <div class="min-w-full px-40">
+    <div class="prose">
+      <Fragment set:html={page.content.rendered} />
+    </div>
   </div>
 </BaseLayout>
