@@ -1,5 +1,13 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+
+const page = await fetch(`${import.meta.env.API_URL}/pages/4703`).then(
+  (response) => response.json(),
+);
 ---
 
-<BaseLayout />
+<BaseLayout>
+  <div class="prose">
+    <Fragment set:html={page.content.rendered} />
+  </div>
+</BaseLayout>
