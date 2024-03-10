@@ -6,14 +6,18 @@ type Posts = Array<{ link: string; content: { rendered: string } }>;
 const { content } = Astro.props;
 
 export async function getStaticPaths() {
-  let posts: Posts = await fetch(
-    `${import.meta.env.API_URL}/pages?per_page=100&_fields=link,content.rendered&exclude=4703`,
+  const posts: Posts = await fetch(
+    `${import.meta.env.API_URL}/pages?per_page=100&_fields=link,content.rendered`,
   ).then((response) => response.json());
 
-  return posts.map((post) => ({
-    params: { pathname: new URL(post.link).pathname },
-    props: { content: post.content.rendered },
-  }));
+  return posts
+    .filter((post) => new URL(post.link).pathname !== "/")
+    .map((post) => {
+      return {
+        params: { pathname: new URL(post.link).pathname },
+        props: { content: post.content.rendered },
+      };
+    });
 }
 ---
 
