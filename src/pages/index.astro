@@ -1,15 +1,15 @@
 ---
-import BaseLayout from "../layouts/BaseLayout.astro";
+import IndexLayout from "../layouts/IndexLayout.astro";
 
 const page = await fetch(`${import.meta.env.API_URL}/pages/4703`).then(
   (response) => response.json(),
 );
 ---
 
-<BaseLayout>
-  <div class="min-w-full px-40">
+<IndexLayout>
+  <div class="min-w-full">
     <div class="prose">
       <Fragment set:html={page.content.rendered} />
     </div>
   </div>
-</BaseLayout>
+</IndexLayout>

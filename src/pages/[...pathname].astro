@@ -1,5 +1,5 @@
 ---
-import BaseLayout from "../layouts/BaseLayout.astro";
+import BasePageLayout from "../layouts/BasePageLayout.astro";
 
 type Posts = Array<{ link: string; content: { rendered: string } }>;
 
@@ -21,10 +21,10 @@ export async function getStaticPaths() {
 }
 ---
 
-<BaseLayout>
+<BasePageLayout>
   <div class="min-w-full px-40">
     <div class="prose">
       <Fragment set:html={content} />
     </div>
   </div>
-</BaseLayout>
+</BasePageLayout>

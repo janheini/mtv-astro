@@ -1,0 +1,16 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { Image } from "astro:assets";
+import banner from "../assets/banner_sportplatz.jpg";
+---
+
+<BaseLayout>
+  <Image
+    src={banner}
+    alt="Blick auf den Sportplatz in Barfelde"
+    class="w-full shadow"
+  />
+  <div class="prose min-w-full flex-grow p-4 lg:px-48">
+    <slot />
+  </div>
+</BaseLayout>
