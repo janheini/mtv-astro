@@ -5,7 +5,6 @@ import tailwind from "@astrojs/tailwind";
 // https://astro.build/config
 export default defineConfig({
   site: "https://mtvbarfelde.netlify.app",
-  output: "static",
+  output: "server",
   integrations: [tailwind()],
 });
-
