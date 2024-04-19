@@ -4,9 +4,7 @@ local_backend: true
 site_url: "https://mtvbarfelde.netlify.app"
 locale: "de"
 backend:
-  name: test-repo
-  repo: janheini/mtv-astro
-  branch: decap
+  name: git-gateway
 
 slug:
   encoding: "ascii"
