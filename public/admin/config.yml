@@ -1,0 +1,63 @@
+# npx netlify-cms-proxy-server
+local_backend: true
+
+site_url: "https://mtvbarfelde.netlify.app"
+locale: "de"
+backend:
+  name: test-repo
+  repo: janheini/mtv-astro
+  branch: decap
+
+slug:
+  encoding: "ascii"
+  clean_accents: true
+
+publish_mode: editorial_workflow
+media_folder: "src/assets/"
+public_folder: "../../assets/"
+
+collections:
+  - name: pages
+    label: Seiten
+    label_singular: Seite
+    files:
+      - name: index
+        label: Startseite / Aktuelles
+        file: src/pages/index.md
+        fields:
+          - name: body
+            label: Text auf der Startseite
+            widget: markdown
+          - name: events
+            label: Events
+            label_singular: Event
+            widget: list
+            fields:
+              - name: name
+                label: Name
+                widget: string
+              - name: date
+                label: Datum
+                widget: datetime
+                date_format: "DD.MM.YYYY"
+                format: "DD.MM.YYYY"
+                time_format: false
+
+  - name: bericht
+    label: Berichte
+    label_singular: Bericht
+    folder: src/content/berichte/
+    create: true
+    summary: "{{title}} ({{day}}.{{month}}.{{year}})"
+    sortable_fields: [date]
+    fields:
+      - { label: "Titel", name: "title", widget: "string" }
+      - { label: "Author", name: "author", widget: "string", required: false }
+      - {
+          label: "Titelbild",
+          name: "thumbnail",
+          widget: "image",
+          required: false,
+        }
+      - { label: "Datum", name: "date", widget: "datetime" }
+      - { label: "Text", name: "body", widget: "markdown" }
