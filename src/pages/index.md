@@ -1,8 +1,6 @@
 ---
 layout: "@layouts/IndexLayout.astro"
-events:
-  - date: 19.04.2024
-    name: Neues Event
+events: []
 ---
 
 # Aktuelles
