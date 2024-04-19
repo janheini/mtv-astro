@@ -2,9 +2,11 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { Image } from "astro:assets";
 import banner from "../assets/banner_sportplatz.jpg";
+import NetlifyIdentityWidget from "../components/NetlifyIdentityWidget.astro";
 ---
 
 <BaseLayout>
+  <NetlifyIdentityWidget slot="in-header" />
   <Image
     src={banner}
     alt="Blick auf den Sportplatz in Barfelde"
