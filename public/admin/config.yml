@@ -23,6 +23,9 @@ collections:
         label: Startseite / Aktuelles
         file: src/pages/index.md
         fields:
+          - name: layout
+            widget: hidden
+            default: "@layouts/IndexLayout.astro"
           - name: body
             label: Text auf der Startseite
             widget: markdown
