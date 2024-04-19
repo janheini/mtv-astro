@@ -1,5 +1,5 @@
 ---
-layout: "@layout/IndexLayout.astro"
+layout: "@layouts/IndexLayout.astro"
 ---
 
 # Aktuelles

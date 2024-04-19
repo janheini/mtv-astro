@@ -3,9 +3,11 @@
 ---
 
 <Fragment>
-  <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"
-  ></script>
-  <script defer>
+  <script
+    is:inline
+    defer
+    src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  <script is:inline defer>
     if (window.netlifyIdentity) {
       window.netlifyIdentity.on("init", (user) => {
         if (!user) {
