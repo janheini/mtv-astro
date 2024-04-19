@@ -10,7 +10,7 @@ slug:
   encoding: "ascii"
   clean_accents: true
 
-publish_mode: editorial_workflow
+publish_mode: simple
 media_folder: "src/assets/"
 public_folder: "../../assets/"
 
