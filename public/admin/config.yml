@@ -23,26 +23,26 @@ collections:
         label: Startseite / Aktuelles
         file: src/pages/index.md
         fields:
-          - name: layout
-            widget: hidden
-            default: "@layouts/IndexLayout.astro"
+          # - name: layout
+          #   widget: hidden
+          #   default: "@layouts/IndexLayout.astro"
           - name: body
             label: Text auf der Startseite
             widget: markdown
-          - name: events
-            label: Events
-            label_singular: Event
-            widget: list
-            fields:
-              - name: name
-                label: Name
-                widget: string
-              - name: date
-                label: Datum
-                widget: datetime
-                date_format: "DD.MM.YYYY"
-                format: "DD.MM.YYYY"
-                time_format: false
+          # - name: events
+          #   label: Events
+          #   label_singular: Event
+          #   widget: list
+          #   fields:
+          #     - name: name
+          #       label: Name
+          #       widget: string
+          #     - name: date
+          #       label: Datum
+          #       widget: datetime
+          #       date_format: "DD.MM.YYYY"
+          #       format: "DD.MM.YYYY"
+          #       time_format: false
 
   - name: bericht
     label: Berichte
