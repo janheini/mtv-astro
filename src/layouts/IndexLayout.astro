@@ -3,6 +3,10 @@ import BaseLayout from "@layouts/BaseLayout.astro";
 import { Image } from "astro:assets";
 import banner from "@assets/banner_sportplatz.jpg";
 import NetlifyIdentityWidget from "@components/NetlifyIdentityWidget.astro";
+
+const { frontmatter } = Astro.props;
+type Event = { date: string; name: string };
+const events: Event[] = frontmatter.events;
 ---
 
 <BaseLayout>
@@ -13,7 +17,27 @@ import NetlifyIdentityWidget from "@components/NetlifyIdentityWidget.astro";
     class="w-full shadow"
     loading="eager"
   />
-  <div class="prose min-w-full flex-grow p-4 lg:px-48">
-    <slot />
+  <div
+    class="flex min-w-full flex-wrap justify-start gap-10 p-10 lg:px-48 2xl:justify-around"
+  >
+    <div class="prose">
+      <h1>{frontmatter.main_heading}</h1>
+      <slot />
+    </div>
+    <div class="prose">
+      <h3>{frontmatter.events_heading}</h3>
+      <ul>
+        {
+          events.map((event) => (
+            <li>
+              <>
+                <div class="font-bold">{event.date}</div>
+                <div>{event.name}</div>
+              </>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
   </div>
 </BaseLayout>

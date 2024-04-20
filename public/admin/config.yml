@@ -14,6 +14,9 @@ slug:
 publish_mode: simple
 media_folder: "src/assets/"
 public_folder: "../../assets/"
+show_preview_links: false
+editor:
+  preview: false
 
 collections:
   - name: pages
@@ -27,23 +30,27 @@ collections:
           - name: layout
             widget: hidden
             default: "@layouts/IndexLayout.astro"
+          - name: main_heading
+            label: Große Überschrift Startseite
+            widget: string
+            default: Aktuelles
           - name: body
             label: Text auf der Startseite
             widget: markdown
+          - name: events_heading
+            label: Überschrift Veranstaltungen
+            widget: string
           - name: events
-            label: Events
-            label_singular: Event
+            label: Veranstaltungen
+            label_singular: Veranstaltungen
             widget: list
             fields:
+              - name: date
+                label: Datum, Uhrzeit
+                widget: string
               - name: name
                 label: Name
                 widget: string
-              - name: date
-                label: Datum
-                widget: datetime
-                date_format: "DD.MM.YYYY"
-                format: "DD.MM.YYYY"
-                time_format: false
 
   - name: bericht
     label: Berichte
