@@ -27,9 +27,6 @@ collections:
         label: Startseite / Aktuelles
         file: src/pages/index.md
         fields:
-          - name: layout
-            widget: hidden
-            default: "@layouts/IndexLayout.astro"
           - name: main_heading
             label: Große Überschrift Startseite
             widget: string
@@ -53,13 +50,45 @@ collections:
                 widget: string
       - name: ueber-uns
         label: Über uns ...
-        file: src/pages/ueber-uns.md
+        file: src/pages/ueber-uns/index.md
         fields:
-          - name: layout
-            widget: hidden
-            default: "@layout/BasePageLayout.astro"
           - name: body
             label: Text auf der "Über uns..." Seite
+            widget: markdown
+      - name: alles-auf-einen-blick
+        label: Alles auf einen Blick
+        file: src/pages/ueber-uns/alles-auf-einen-blick.md
+        fields:
+          - name: body
+            label: Text auf der "Alles auf einen Blick" Seite
+            widget: markdown
+      - name: meldung-von-sportunfaellen
+        label: Sportversicherung
+        file: src/pages/ueber-uns/meldung-von-sportunfaellen.md
+        fields:
+          - name: body
+            label: Text auf der "Meldung von Sportunfällen / Sportversicherung" Seite
+            widget: markdown
+      - name: hsg09
+        label: HSG 09 Startseite
+        file: src/pages/hsg09/index.md
+        fields:
+          - name: body
+            label: Text auf der HSG 09 Startseite
+            widget: markdown
+      - name: hsg09-vorstand
+        label: HSG 09 Vorstand
+        file: src/pages/hsg09/vorstand-hsg09.md
+        fields:
+          - name: body
+            label: Text auf der "Vorstand HSG 09" Seite
+            widget: markdown
+      - name: hsg09-trainingszeiten
+        label: HSG 09 Trainingszeiten
+        file: src/pages/hsg09/trainingszeiten.md
+        fields:
+          - name: body
+            label: Text auf der "Trainingszeiten HSG 09" Seite
             widget: markdown
 
   - name: bericht
