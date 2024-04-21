@@ -51,6 +51,16 @@ collections:
               - name: name
                 label: Name
                 widget: string
+      - name: ueber-uns
+        label: Über uns ...
+        file: src/pages/ueber-uns.md
+        fields:
+          - name: layout
+            widget: hidden
+            default: "@layout/BasePageLayout.astro"
+          - name: body
+            label: Text auf der "Über uns..." Seite
+            widget: markdown
 
   - name: bericht
     label: Berichte
