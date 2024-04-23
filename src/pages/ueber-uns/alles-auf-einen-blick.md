@@ -1,48 +1,45 @@
 ---
 layout: "@layouts/BasePageLayout.astro"
 ---
-
 # Alles auf einen Blick
 
 ### Vorstand
 
-- **1. Vorsitzender**
+* **1. Vorsitzender**
 
-  Henning Koch, vorstand@mtvbarfelde.de
+  Eike Wilkens, vorstand@mtvbarfelde.de
 
-  Bachstraße 3, 31028 Gronau (Leine), OT Barfelde
+  An der Schmau 8, 31028 Gronau (Leine), OT Barfelde
 
-  Telefon (0 51 82) 16 83
-
-- **2. Vorsitzende**
+  Telefon (0177) 2 68 04 84
+* **2. Vorsitzende**
 
   Melanie Harbusch, vorstand2@mtvbarfelde.de
 
   Schulstraße 6, 31028 Gronau (Leine), OT Barfelde
 
   Telefon (05182) 94 71 33
+* **Sportwartin**
 
-- **Sportwart**
+  Katharina Wunstorf, sportwart@mtvbarfelde.de
+* An der Schmau 15, 31028 Gronau (Leine), OT Barfelde
 
-  unbesetzt
-
-- **Schriftführerin**
+  Telefon (0 51 82) 90 96 49
+* **Schriftführerin**
 
   Dunja Heinemeyer, schriftfuehrer@mtvbarfelde.de
 
   Im Schmiedehofe 4, 31028 Gronau (Leine), OT Barfelde
 
   Telefon (0 51 82) 5 25 65
-
-- **Kassenwartin**
+* **Kassenwartin**
 
   Heidrun Schwartz, kassenwart@mtvbarfelde.de
 
   Eddinghäuser Str. 17, 31028 Gronau (Leine), OT Barfelde
 
   Telefon (0 51 82) 30 96
-
-- **Pressewart**
+* **Pressewart**
 
   Peter Rütters, pressewart@mtvbarfelde.de
 
@@ -50,11 +47,11 @@ layout: "@layouts/BasePageLayout.astro"
 
 ### **Ehrenrat**
 
-- Werner Nolte
-- Wolfgang Euling
-- Heiner Kreth
-- Jürgen Klingebiel
-- Katharina Wunstorf
+* Werner Nolte
+* Wolfgang Euling
+* Heiner Kreth
+* Jürgen Klingebiel
+* Henning Koch
 
 ### **Beiträge (jährlich)**
 
@@ -89,9 +86,9 @@ keinen Betrag beim nächsten Mal mit einziehen.
 
 ### Dokumente
 
-- [Satzung vom 20.04.2018]()
-- [Eintrittserklärung]()
-- [Einzugsermächtigung]()
+* [Satzung vom 20.04.2018](<>)
+* [Eintrittserklärung](<>)
+* [Einzugsermächtigung](<>)
 
 ### Bankverbindung
 
