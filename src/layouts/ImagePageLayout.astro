@@ -1,0 +1,31 @@
+---
+import BasePageLayout from "@layouts/BasePageLayout.astro";
+import type { ImageMetadata } from "astro";
+import { Image } from "astro:assets";
+
+const all_images = import.meta.glob<{ default: ImageMetadata }>("@assets/**");
+const props_images: string[] =
+  Astro.props.frontmatter.images?.map(
+    (image: { image: string }) => `/src/assets/${image.image}`,
+  ) || [];
+
+for (const image of props_images) {
+  if (!all_images[image])
+    throw new Error(`"${image}" does not exist in glob: "@assets/**"`);
+}
+---
+
+<BasePageLayout>
+  <slot />
+  <Fragment slot="below">
+    <div
+      class="grid max-w-prose grid-cols-1 justify-start gap-8 pt-8 lg:grid-cols-2"
+    >
+      {
+        props_images.map((image) => (
+          <Image src={all_images[image]()} alt="" class="backdrop-blur-sm" />
+        ))
+      }
+    </div>
+  </Fragment>
+</BasePageLayout>
