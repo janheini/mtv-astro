@@ -20,11 +20,11 @@ const events: Event[] = frontmatter.events;
   <div
     class="flex min-w-full flex-wrap justify-start gap-10 p-10 lg:px-48 2xl:justify-around"
   >
-    <div class="prose lg:prose-lg">
+    <div class="prose">
       <h1>{frontmatter.main_heading}</h1>
       <slot />
     </div>
-    <div class="prose lg:prose-lg">
+    <div class="prose">
       <h3>{frontmatter.events_heading}</h3>
       <ul>
         {
