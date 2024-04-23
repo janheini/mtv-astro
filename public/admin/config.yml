@@ -90,6 +90,24 @@ collections:
           - name: body
             label: Text auf der "Trainingszeiten HSG 09" Seite
             widget: markdown
+      - name: unser-sporthaus
+        label: Unser Sporthaus
+        file: src/pages/unser-sporthaus/index.md
+        media_folder: "/src/assets/sporthaus"
+        fields:
+          - name: body
+            label: Text auf der "Unser Sporthaus"
+            widget: markdown
+          - name: images
+            label: Bildergalerie unten
+            widget: list
+            required: false
+            fields:
+              - name: image
+                label: Bild
+                required: false
+                widget: image
+                public_folder: "@assets/sporthaus"
 
   - name: bericht
     label: Berichte
