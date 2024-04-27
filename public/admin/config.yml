@@ -96,19 +96,46 @@ collections:
         file: src/pages/unser-sporthaus/index.md
         media_folder: "/src/assets/sporthaus"
         fields:
+          - name: title
+            label: Überschrift
+            required: true
+            widget: string
+          - name: hero
+            label: Titelbild
+            required: false
+            widget: image
+            collapsed: false
+            hint: |
+              Wird zwischen Überschrift und Text angezeigt
+              und bei verlinkten Berichten auch auf der Startseite
           - name: body
             label: Text auf der "Unser Sporthaus"
             widget: markdown
-          - name: images
+          - name: gallery
             label: Bildergalerie unten
+            label_singular: Bild
             widget: list
             required: false
-            fields:
-              - name: image
-                label: Bild
-                required: false
-                widget: image
-                public_folder: "@assets/sporthaus"
+            collapsed: false
+            field:
+              name: image
+              label: Bild
+              widget: image
+              public_folder: "@assets/sporthaus"
+      - name: sporthaus-preise
+        label: Sporthaus Miete / Preise
+        file: src/pages/unser-sporthaus/preise.md
+        fields:
+          - name: body
+            label: Text auf der "Sporthaus Miete / Preise" Seite
+            widget: markdown
+      - name: sporthaus-belegungsplan
+        label: Sporthaus Belegungsplan
+        file: src/pages/unser-sporthaus/belegungsplan.md
+        fields:
+          - name: body
+            label: Text auf der "Sporthaus Belegungsplan" Seite
+            widget: markdown
 
   - name: bericht
     label: Berichte
