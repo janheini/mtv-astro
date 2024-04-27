@@ -20,9 +20,8 @@ editor:
   preview: false
 
 collections:
-  - name: pages
-    label: Seiten
-    label_singular: Seite
+  - name: ueber-uns
+    label: Aktuelles / Über uns
     files:
       - name: index
         label: Startseite / Aktuelles
@@ -70,6 +69,10 @@ collections:
           - name: body
             label: Text auf der "Meldung von Sportunfällen / Sportversicherung" Seite
             widget: markdown
+
+  - name: hsg09
+    label: HSG 09
+    files:
       - name: hsg09
         label: HSG 09 Startseite
         file: src/pages/hsg09/index.md
@@ -91,6 +94,10 @@ collections:
           - name: body
             label: Text auf der "Trainingszeiten HSG 09" Seite
             widget: markdown
+
+  - name: sporthaus
+    label: Sporthaus
+    files:
       - name: unser-sporthaus
         label: Unser Sporthaus
         file: src/pages/unser-sporthaus/index.md
@@ -136,6 +143,22 @@ collections:
           - name: body
             label: Text auf der "Sporthaus Belegungsplan" Seite
             widget: markdown
+
+  - name: sportarten
+    label: Sportarten
+    label_singular: Sportart
+    folder: src/pages/sportarten
+    summary: "{{name}}"
+    fields:
+      - name: name
+        label: Name
+        widget: string
+      - name: hero
+        label: Titelbild
+        widget: image
+      - name: body
+        label: Text
+        widget: markdown
 
   - name: bericht
     label: Berichte
