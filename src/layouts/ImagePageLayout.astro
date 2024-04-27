@@ -18,7 +18,7 @@ for (const image of props_images) {
 
 <BasePageLayout>
   <h1>{title}</h1>
-  <Image src={all_images[hero]()} alt="" />
+  {hero in all_images && <Image src={all_images[hero]()} alt="" />}
   <slot />
   <Fragment slot="below">
     <div
