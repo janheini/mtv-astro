@@ -1,6 +1,7 @@
 ---
 layout: "@layouts/ImagePageLayout.astro"
 name: Fatburner Step
+hero: "/src/assets/sportarten/fatburner-step.jpg"
 ---
 
 Fatburner Step ist ein schweißtreibendes Auf und Ab, welches den

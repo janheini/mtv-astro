@@ -1,6 +1,7 @@
 ---
 layout: "@layouts/ImagePageLayout.astro"
 name: Zumba
+hero: "/src/assets/sportarten/zumba.jpg"
 ---
 
 ### Zusammen mit dem TSV Eitzum

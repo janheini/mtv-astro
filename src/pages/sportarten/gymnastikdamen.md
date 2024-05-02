@@ -1,6 +1,7 @@
 ---
 layout: "@layouts/ImagePageLayout.astro"
 name: Gymnastikdamen
+hero: "/src/assets/sportarten/gymnastikdamen.jpg"
 ---
 
 Wir sind die Gymnastikdamen des MTV Barfelde und halten uns im Rahmen unserer

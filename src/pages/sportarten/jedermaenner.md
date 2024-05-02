@@ -1,6 +1,7 @@
 ---
 layout: "@layouts/ImagePageLayout.astro"
 name: Jedermänner
+hero: "/src/assets/sportarten/jedermaenner.jpg"
 ---
 
 Es ist diese Kombination aus Anstrengung und körperlichem Wohlgefühl, die die
