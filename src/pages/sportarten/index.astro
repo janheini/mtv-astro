@@ -1,7 +1,35 @@
 ---
 import BasePageLayout from "@layouts/BasePageLayout.astro";
+import { Image } from "astro:assets";
+
+interface Frontmatter {
+  name: string;
+  hero: string;
+}
+
+const sportarten = await Astro.glob<Frontmatter>("./*.md");
+const images = import.meta.glob<{ default: ImageMetadata }>("@assets/**");
+
+// check if all hero images exist
+for (const sportart of sportarten) {
+  if (!images[sportart.frontmatter.hero]) {
+    throw new Error(
+      `"${sportart.frontmatter.hero}" does not exist in glob: "@assets/**"`,
+    );
+  }
+}
 ---
 
 <BasePageLayout>
   <h1>Sportarten</h1>
+  {
+    sportarten.map((sportart) => (
+      <>
+        <h3>
+          <a href={sportart.url}>{sportart.frontmatter.name}</a>
+        </h3>
+        <Image src={images[sportart.frontmatter.hero]()} alt="" />
+      </>
+    ))
+  }
 </BasePageLayout>
