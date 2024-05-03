@@ -1,5 +1,5 @@
 ---
-import BasePageLayout from "@layouts/BasePageLayout.astro";
+import BaseLayout from "@layouts/BaseLayout.astro";
 import { Image } from "astro:assets";
 
 interface Frontmatter {
@@ -20,16 +20,24 @@ for (const sportart of sportarten) {
 }
 ---
 
-<BasePageLayout>
-  <h1>Sportarten</h1>
-  {
-    sportarten.map((sportart) => (
-      <>
-        <h3>
-          <a href={sportart.url}>{sportart.frontmatter.name}</a>
-        </h3>
-        <Image src={images[sportart.frontmatter.hero]()} alt="" />
-      </>
-    ))
-  }
-</BasePageLayout>
+<BaseLayout>
+  <div class="prose prose-xl min-w-full p-10 lg:px-48">
+    <h1>Sportarten</h1>
+    <div class="w-2/3">
+      {
+        sportarten.map((sportart) => (
+          <div class="flex flex-wrap items-center gap-x-8">
+            <Image
+              src={images[sportart.frontmatter.hero]()}
+              alt=""
+              class="w-2/3"
+            />
+            <h3>
+              <a href={sportart.url}>{sportart.frontmatter.name}</a>
+            </h3>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</BaseLayout>
