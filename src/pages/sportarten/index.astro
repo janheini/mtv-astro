@@ -3,7 +3,7 @@ import BaseLayout from "@layouts/BaseLayout.astro";
 import { Image } from "astro:assets";
 
 interface Frontmatter {
-  name: string;
+  title: string;
   hero: string;
 }
 
@@ -33,7 +33,7 @@ for (const sportart of sportarten) {
               class="w-2/3"
             />
             <h3>
-              <a href={sportart.url}>{sportart.frontmatter.name}</a>
+              <a href={sportart.url}>{sportart.frontmatter.title}</a>
             </h3>
           </div>
         ))

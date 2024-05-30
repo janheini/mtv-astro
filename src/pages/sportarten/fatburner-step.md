@@ -1,8 +1,10 @@
 ---
 layout: "@layouts/ImagePageLayout.astro"
-name: Fatburner Step
+title: Fatburner Step
 hero: "/src/assets/sportarten/fatburner-step.jpg"
 ---
+
+![](/src/assets/sportarten/fatburner-step.jpg)
 
 Fatburner Step ist ein schweißtreibendes Auf und Ab, welches den
 Fettstoffwechsel aktiviert und die Kondition verbessert.

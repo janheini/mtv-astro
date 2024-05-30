@@ -1,0 +1,19 @@
+---
+import ImagePageLayout from "@layouts/ImagePageLayout.astro";
+import { getCollection } from "astro:content";
+
+export async function getStaticPaths() {
+  const posts = await getCollection("berichte");
+  return posts.map((post) => ({
+    params: { slug: post.slug },
+    props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+const { Content } = await post.render();
+---
+
+<ImagePageLayout frontmatter={post.data}>
+  <Content />
+</ImagePageLayout>

@@ -1,7 +1,6 @@
 ---
 layout: "@layouts/ImagePageLayout.astro"
 title: Unser Sporthaus
-hero: /src/assets/sporthaus/sporthaus_aussen1.jpg
 gallery:
   - image: /src/assets/sporthaus/sporthaus_aussen2.jpg
   - image: /src/assets/sporthaus/sporthaus_innen1.jpg
@@ -12,6 +11,8 @@ gallery:
   - image: /src/assets/sporthaus/sporthaus_dusche.jpg
   - image: /src/assets/sporthaus/sporthaus_grill.jpg
 ---
+
+![](/src/assets/sporthaus/sporthaus_aussen1.jpg)
 
 Angrenzend an den Barfelder Sportplatz liegt idyllisch gelegen unser Sporthaus.
 

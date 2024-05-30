@@ -12,7 +12,7 @@ Deutschland
 Kontakt:  
 E-Mail: [vorstand@mtvbarfelde.de](mailto:vorstand@mtvbarfelde.de)
 
-### Der MTV Barfelde wir vertreten durch
+### Der MTV Barfelde wird vertreten durch
 
 1\. Vorsitzender: Eike Wilkens
 

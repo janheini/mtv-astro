@@ -1,10 +1,12 @@
 ---
 layout: "@layouts/ImagePageLayout.astro"
-name: Zumba
-hero: "/src/assets/sportarten/zumba.jpg"
+title: Zumba
+hero: /src/assets/sportarten/zumba.jpg
 ---
 
 ### Zusammen mit dem TSV Eitzum
+
+![](/src/assets/sportarten/zumba.jpg)
 
 Zumba kennt fast jeder.
 

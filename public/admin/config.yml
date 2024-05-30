@@ -147,9 +147,9 @@ collections:
     label_singular: Sportart
     folder: src/pages/sportarten
     media_folder: "/src/assets/sportarten"
-    summary: "{{name}}"
+    summary: "{{title}}"
     fields:
-      - name: name
+      - name: title
         label: Name
         widget: string
       - name: hero
@@ -159,21 +159,40 @@ collections:
         label: Text
         widget: markdown
 
-  - name: bericht
+  - name: berichte
     label: Berichte
     label_singular: Bericht
-    folder: src/content/berichte/
+    folder: src/content/berichte
     create: true
     summary: "{{title}} ({{day}}.{{month}}.{{year}})"
     sortable_fields: [date]
     fields:
-      - { label: "Titel", name: "title", widget: "string" }
-      - { label: "Author", name: "author", widget: "string", required: false }
-      - {
-          label: "Titelbild",
-          name: "thumbnail",
-          widget: "image",
-          required: false,
-        }
-      - { label: "Datum", name: "date", widget: "datetime" }
-      - { label: "Text", name: "body", widget: "markdown" }
+      - name: title
+        label: Titel
+        widget: string
+      - name: author
+        label: Author
+        widget: string
+        required: false
+      - name: hero
+        label: Titelbild
+        widget: image
+        required: false
+        description: Wird auf der Startseite angezeigt, wenn dort verknüpft
+      - name: date
+        label: Datum
+        widget: datetime
+      - name: body
+        label: Text
+        widget: markdown
+        required: false
+      - name: gallery
+        label: Bildergalerie unten
+        label_singular: Bild
+        widget: list
+        required: false
+        collapsed: false
+        field:
+          name: image
+          label: Bild
+          widget: image

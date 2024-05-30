@@ -6,12 +6,14 @@ import { Image } from "astro:assets";
 interface Props {
   frontmatter: {
     title: string;
-    hero: string | undefined;
-    gallery: Array<{ image: string }> | undefined;
+    author?: string | undefined;
+    date?: Date | undefined;
+    hero?: string | undefined;
+    gallery?: Array<{ image: string }> | undefined;
   };
 }
 
-const { title, hero, gallery } = Astro.props.frontmatter;
+const { title, author, date, hero, gallery } = Astro.props.frontmatter;
 
 const all_images = import.meta.glob<{ default: ImageMetadata }>("@assets/**");
 
@@ -31,12 +33,21 @@ if (hero) {
 ---
 
 <BasePageLayout>
-  <h1>{title}</h1>
-  {hero && <Image src={all_images[hero]()} alt="" />}
-  <slot />
+  <div>
+    <h1 class="inline">{title}</h1>
+    <div class="flex w-full justify-end">
+      <span class="prose-sm">
+        {date && <>{date.toLocaleDateString()}</>}
+        {author && <> von {author}</>}
+      </span>
+    </div>
+  </div>
+  <article>
+    <slot />
+  </article>
   <Fragment slot="below">
     <div
-      class="grid max-w-prose grid-cols-1 justify-start gap-8 pt-8 lg:grid-cols-2"
+      class="grid max-w-screen-lg grid-cols-1 justify-start gap-8 pt-8 lg:grid-cols-2"
     >
       {
         gallery &&
