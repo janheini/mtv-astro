@@ -10,12 +10,18 @@ const posts = await getCollection("berichte").then((berichte) =>
 
 <BasePageLayout>
   <h1>Alle Berichte</h1>
-  <ul>
+  <ul class="prose-lg">
     {
       posts.map((post) => (
         <li>
-          <a href={`/berichte/${post.slug}`}>
-            {post.data.title} ({new Date(post.data.date).toLocaleDateString()})
+          <span class="pr-2">
+            {new Date(post.data.date).toLocaleDateString("de")}
+          </span>
+          <a
+            href={`/berichte/${post.slug}`}
+            class="no-underline hover:underline"
+          >
+            {post.data.title}
           </a>
         </li>
       ))
