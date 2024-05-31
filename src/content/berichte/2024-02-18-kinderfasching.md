@@ -1,8 +1,9 @@
 ---
-title: "Kinderfasching"
-date: "2024-02-18"
+title: Kinderfasching
+date: 2024-02-18
 categories:
-  - "berichte"
+  - berichte
+hero: "@assets/Kinderfasching-2024-02.jpg"
 gallery:
   - "@assets/Kinderfasching-2024-01.jpg"
   - "@assets/Kinderfasching-2024-02.jpg"
