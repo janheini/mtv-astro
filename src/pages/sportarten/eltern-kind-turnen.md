@@ -1,10 +1,10 @@
 ---
 layout: "@layouts/ImagePageLayout.astro"
 title: Eltern-Kind-Turnen
-hero: "/src/assets/sportarten/eltern-kind-turnen.jpg"
+hero: "@assets/sportarten/eltern-kind-turnen.jpg"
 ---
 
-![](/src/assets/sportarten/eltern-kind-turnen.jpg)
+![](@assets/sportarten/eltern-kind-turnen.jpg)
 
 ### Zusammen mit dem TSV Eitzum
 

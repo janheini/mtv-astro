@@ -1,10 +1,10 @@
 ---
 layout: "@layouts/ImagePageLayout.astro"
 title: Kinderzumba
-hero: "/src/assets/sportarten/kinderzumba.jpg"
+hero: "@assets/sportarten/kinderzumba.jpg"
 ---
 
-![](/src/assets/sportarten/kinderzumba.jpg)
+![](@assets/sportarten/kinderzumba.jpg)
 
 ### Zusammen mit dem TSV Eitzum
 

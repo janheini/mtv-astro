@@ -12,7 +12,7 @@ const images = import.meta.glob<{ default: ImageMetadata }>("@assets/**");
 
 // check if all hero images exist
 for (const sportart of sportarten) {
-  if (!images[sportart.frontmatter.hero]) {
+  if (!images[sportart.frontmatter.hero.replace(/^@assets/, "/src/assets")]) {
     throw new Error(
       `"${sportart.frontmatter.hero}" does not exist in glob: "@assets/**"`,
     );
@@ -28,7 +28,9 @@ for (const sportart of sportarten) {
         sportarten.map((sportart) => (
           <div class="flex flex-wrap items-center gap-x-8">
             <Image
-              src={images[sportart.frontmatter.hero]()}
+              src={images[
+                sportart.frontmatter.hero.replace(/^@assets/, "/src/assets")
+              ]()}
               alt=""
               class="w-2/3"
             />

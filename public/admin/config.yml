@@ -13,7 +13,8 @@ slug:
   clean_accents: true
 
 publish_mode: simple
-media_folder: "src/assets/"
+media_folder: "src/assets"
+public_folder: "@assets"
 show_preview_links: false
 editor:
   preview: false
@@ -101,6 +102,7 @@ collections:
         label: Unser Sporthaus
         file: src/pages/unser-sporthaus/index.md
         media_folder: "/src/assets/sporthaus"
+        public_folder: "@assets/sporthaus"
         fields:
           - name: title
             label: Überschrift
@@ -147,6 +149,7 @@ collections:
     label_singular: Sportart
     folder: src/pages/sportarten
     media_folder: "/src/assets/sportarten"
+    public_folder: "@assets/sportarten"
     summary: "{{title}}"
     fields:
       - name: title

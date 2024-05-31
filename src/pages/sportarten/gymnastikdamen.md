@@ -1,10 +1,10 @@
 ---
 layout: "@layouts/ImagePageLayout.astro"
 title: Gymnastikdamen
-hero: "/src/assets/sportarten/gymnastikdamen.jpg"
+hero: "@assets/sportarten/gymnastikdamen.jpg"
 ---
 
-![](/src/assets/sportarten/gymnastikdamen.jpg)
+![](@assets/sportarten/gymnastikdamen.jpg)
 
 Wir sind die Gymnastikdamen des MTV Barfelde und halten uns im Rahmen unserer
 Möglichkeiten mit viel Spaß körperlich fit.

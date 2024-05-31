@@ -14,20 +14,24 @@ interface Props {
 }
 
 const { title, author, date, hero, gallery } = Astro.props.frontmatter;
+const absolute_gallery = gallery?.map((image) =>
+  image.image.replace(/^@assets/, "/src/assets"),
+);
+const absolute_hero = hero?.replace(/^@assets/, "/src/assets");
 
 const all_images = import.meta.glob<{ default: ImageMetadata }>("@assets/**");
 
 // check if the images from props are in all_images (exist)
-if (gallery) {
-  for (const image of gallery) {
-    if (!all_images[image.image])
-      throw new Error(`"${image.image}" does not exist in glob: "@assets/**"`);
+if (absolute_gallery) {
+  for (const image of absolute_gallery) {
+    if (!all_images[image])
+      throw new Error(`"${image}" does not exist in glob: "@assets/**"`);
   }
 }
 
-if (hero) {
-  if (!all_images[hero]) {
-    throw new Error(`"${hero}" does not exist in glob: "@assets/**"`);
+if (absolute_hero) {
+  if (!all_images[absolute_hero]) {
+    throw new Error(`"${absolute_hero}" does not exist in glob: "@assets/**"`);
   }
 }
 ---
@@ -50,9 +54,9 @@ if (hero) {
       class="grid max-w-screen-lg grid-cols-1 justify-start gap-8 pt-8 lg:grid-cols-2"
     >
       {
-        gallery &&
-          gallery.map((image) => (
-            <Image src={all_images[image.image]()} alt="" />
+        absolute_gallery &&
+          absolute_gallery.map((image) => (
+            <Image src={all_images[image]()} alt="" />
           ))
       }
     </div>

@@ -1,10 +1,10 @@
 ---
 layout: "@layouts/ImagePageLayout.astro"
 title: Bauch-Beine-Po
-hero: "/src/assets/sportarten/bauch-beine-po.jpg"
+hero: "@assets/sportarten/bauch-beine-po.jpg"
 ---
 
-![](/src/assets/sportarten/bauch-beine-po.jpg)
+![](@assets/sportarten/bauch-beine-po.jpg)
 
 ### Zusammen mit dem TSV Eitzum
 

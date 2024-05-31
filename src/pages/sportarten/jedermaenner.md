@@ -1,10 +1,10 @@
 ---
 layout: "@layouts/ImagePageLayout.astro"
 title: Jedermänner
-hero: "/src/assets/sportarten/jedermaenner.jpg"
+hero: "@assets/sportarten/jedermaenner.jpg"
 ---
 
-![](/src/assets/sportarten/jedermaenner.jpg)
+![](@assets/sportarten/jedermaenner.jpg)
 
 Es ist diese Kombination aus Anstrengung und körperlichem Wohlgefühl, die die
 Mitglieder der "Jedermann-Sparte" des MTV Barfelde nicht mehr missen wollen.

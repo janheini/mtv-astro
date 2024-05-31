@@ -1,10 +1,10 @@
 ---
 layout: "@layouts/ImagePageLayout.astro"
 title: FitForFun
-hero: "/src/assets/sportarten/fit-for-fun.jpg"
+hero: "@assets/sportarten/fit-for-fun.jpg"
 ---
 
-![](/src/assets/sportarten/fit-for-fun.jpg)
+![](@assets/sportarten/fit-for-fun.jpg)
 
 Wir sind die FitForFun Gruppe des MTV Barfelde.
 
