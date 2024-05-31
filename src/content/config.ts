@@ -7,7 +7,7 @@ const berichte = defineCollection({
     date: z.union([z.date(), z.string().transform((str) => new Date(str))]),
     hero: z.string().optional(),
     author: z.string().optional(),
-    gallery: z.array(z.object({ image: z.string() })).optional(),
+    gallery: z.array(z.string()).optional(),
   }),
 });
 

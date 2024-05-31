@@ -2,14 +2,14 @@
 layout: "@layouts/ImagePageLayout.astro"
 title: Unser Sporthaus
 gallery:
-  - image: "@assets/sporthaus/sporthaus_aussen2.jpg"
-  - image: "@assets/sporthaus/sporthaus_innen1.jpg"
-  - image: "@assets/sporthaus/sporthaus_innen2.jpg"
-  - image: "@assets/sporthaus/sporthaus_innen3.jpg"
-  - image: "@assets/sporthaus/sporthaus_innen4.jpg"
-  - image: "@assets/sporthaus/sporthaus_umkleidekabine.jpg"
-  - image: "@assets/sporthaus/sporthaus_dusche.jpg"
-  - image: "@assets/sporthaus/sporthaus_grill.jpg"
+  - "@assets/sporthaus/sporthaus_aussen2.jpg"
+  - "@assets/sporthaus/sporthaus_innen1.jpg"
+  - "@assets/sporthaus/sporthaus_innen2.jpg"
+  - "@assets/sporthaus/sporthaus_innen3.jpg"
+  - "@assets/sporthaus/sporthaus_innen4.jpg"
+  - "@assets/sporthaus/sporthaus_umkleidekabine.jpg"
+  - "@assets/sporthaus/sporthaus_dusche.jpg"
+  - "@assets/sporthaus/sporthaus_grill.jpg"
 ---
 
 ![](@assets/sporthaus/sporthaus_aussen1.jpg)

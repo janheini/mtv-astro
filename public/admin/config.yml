@@ -169,7 +169,8 @@ collections:
     folder: src/content/berichte
     create: true
     summary: "{{title}} ({{day}}.{{month}}.{{year}})"
-    sortable_fields: [date]
+    sortable_fields:
+      fields: [date]
     fields:
       - name: title
         label: Titel
@@ -186,6 +187,9 @@ collections:
       - name: date
         label: Datum
         widget: datetime
+        format: yyyy-MM-dd
+        date_format: dd.MM.yyyy
+        time_format: false
       - name: body
         label: Text
         widget: markdown
@@ -196,7 +200,7 @@ collections:
         widget: list
         required: false
         collapsed: false
-        field:
-          name: image
-          label: Bild
-          widget: image
+        fields:
+          - name: image
+            label: Bild
+            widget: image

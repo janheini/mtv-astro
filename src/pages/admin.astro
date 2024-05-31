@@ -6,9 +6,10 @@ import NetlifyIdentityWidget from "@components/NetlifyIdentityWidget.astro";
   <link href="/admin/config.yml" type="text/yaml" rel="cms-config-url" />
   <NetlifyIdentityWidget />
 </head>
-<body>
+<body class="h-screen">
   <script>
-    import CMS from "decap-cms-app";
+    import CMS from "@staticcms/core";
+    import "@staticcms/core/dist/main.css";
     CMS.init();
   </script>
 </body>
