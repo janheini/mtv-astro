@@ -9,13 +9,13 @@ interface Props {
     author?: string | undefined;
     date?: Date | undefined;
     hero?: string | undefined;
-    gallery?: Array<{ image: string }> | undefined;
+    gallery?: Array<string> | undefined;
   };
 }
 
 const { title, author, date, hero, gallery } = Astro.props.frontmatter;
 const absolute_gallery = gallery?.map((image) =>
-  image.image.replace(/^@assets/, "/src/assets"),
+  image.replace(/^@assets/, "/src/assets"),
 );
 const absolute_hero = hero?.replace(/^@assets/, "/src/assets");
 
