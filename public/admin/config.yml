@@ -5,7 +5,8 @@ site_url: "https://mtvbarfelde.netlify.app"
 logo_url: "https://mtvbarfelde.netlify.app/wappen.png"
 locale: "de"
 backend:
-  name: git-gateway
+  name: github
+  repo: janheini/mtv-astro
   branch: main
 
 slug:
