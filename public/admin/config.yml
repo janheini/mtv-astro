@@ -15,6 +15,9 @@ slug:
 
 publish_mode: simple
 media_folder: "src/assets"
+media_library:
+  max_file_size: 5242880 # 5MB
+  folder_support: true
 public_folder: "@assets"
 show_preview_links: false
 editor:
